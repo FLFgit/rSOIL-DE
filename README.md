@@ -6,7 +6,7 @@
 
 # General info
 
-The repository contains the scripts and necessary steps to implement the goals of the SOIL-DE project "Entwicklung von Indikatoren zur Bewertung der Ertragsfähigkeit, Nutzungsintensität und Vulnerabilität landwirtschaftlich genutzter Böden in Deutschland". The steps are:  
+The repository contains the scripts and necessary steps to implement the goals of the SOIL-DE project "Development of indicators to assess the yield capacity, utilisation intensity and vulnerability of agricultural soils in Germany". The steps are:  
 
 - Developping a general worflow to utilize the Bodenübersichtskarte 1:200.000 (BÜK200, BGR)  
 - Calculating soil functions and potentials to evaluate the soil  
@@ -210,7 +210,7 @@ combining all federal states to one Germany-wide soil function / soil potential 
 
 ## quantitative soil loss  
 **in R**  
-[Verlust.R](Verlust.R)  
+[Loss.R](Loss.R)  
 
 - **important:** replace the abbreviation of the federal state (e.g. BL <- "BB") in the whole script before starting    
 - **"verlust_lw_%YYYY.tif":** calculate new cover areas (IMCC=1) for every available time step  
@@ -218,7 +218,7 @@ combining all federal states to one Germany-wide soil function / soil potential 
 - **"verlust_lw.csv":** area shares of cropland and grassland
 
 ## qualitative soil loss 
-[Verlust.R](Verlust.R)  
+[Loss.R](Loss.R)  
  
 - collecting of all soil functions and potentials in one folder  
 - **"SoilFunction_%YYYY.tif_Q_%YYYY.tif":** clipping soil functions and potentials with the four different "verlust_lw_%YYYY.tif"   
